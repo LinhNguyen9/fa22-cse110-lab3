@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Meeting Minutes </title>
+    <style>
+        body {background-color:rgb(248, 233, 210);}
+        h1 {color:red;}
+        
+    </style>
+    <style>
+    .title {
+        background-color: rgb(196, 242, 242);
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center"> <strong> <i> Meeting Notes </i></strong></h1>
+    <h2>The nav element</h2>
+
+    <p>The nav element defines a set of navigation links:</p>
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav>
+    <hr>
+
+    <div class="title">
+        <p>
+            <span style="font-size:130%"> <u>Project:</u> </span>
+            <span style="font-size:110%"> think about it later  </span>
+        </p>
+        <p>
+            <span style="font-size:130%"> <u>Attendees:</u> </span>
+            <span style="font-size:110%"> think about it later  </span>
+        </p>
+        <p>
+            <span style="font-size:130%"> <u>Date:</u> </span>
+            <span style="font-size:110%"> think about it later  </span>
+        </p>
+    </div>
+
+    <hr>
+    <header>
+        Think about something for header
+    </header>
+
+
+    <h3>Don't know how to use link tag yet. ask Kristy about it</h3>
+
+    <h2><u>Agenda</u></h2>
+    <p> (Things will be covered) <br>
+        Think about it later <br>
+        Think about it later <br>
+        Think about it later <br>
+        Think about it later <br>
+        Think about it later <br>
+    </p>
+    <p>---------------------------------------------</p>
+    <p>
+        <span style="font-size:130%">Unfinished business from last meeting: </span> <br>
+            Think about it later <br>
+            Think about it later <br>
+            Think about it later <br>
+            Think about it later <br>
+            Think about it later <br>
+    </p>
+
+    <h2>The section element</h2>
+
+    <section>
+      <h2>WWF History</h2>
+      <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+    
+    <section>
+      <h2>WWF's Symbol</h2>
+      <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+
+    <h2>Form</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <h2>Radio Buttons</h2>
+
+    <p>Choose your favorite Web language:</p>
+    
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form> 
+
+    <h2>Textarea</h2>
+        <p>The textarea element defines a multi-line input field.</p>
+
+        <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <h2>Fieldset</h2>
+
+    <form action="/action_page.php">
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+    <h2>Data List</h2>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+
+    <h2>Select (option included) </h2>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <h2>Option</h2>
+
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <h3>ul (unordered list)</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h3>The ol element (ordered list)</h3>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <h2><em>The button Element</em></h2>
+
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+    <h1>The img element</h1>
+
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+    <h2>The audio element</h2>
+
+    <p>Click on the play button to play a sound:</p>
+
+    <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <h2>The video element</h2>
+
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>The details element (summary included)</h1>
+
+    <details>
+      <summary>Epcot Center</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+
+    <h1>a (hyper link)</h1>
+
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>    
+
+    <h1>The footer element</h1>
+
+    <footer>
+      <p>Author: Hege Refsnes<br>
+      <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+    
+  </body>
+</html>
