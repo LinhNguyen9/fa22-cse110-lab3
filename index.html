@@ -14,6 +14,13 @@
         
     </style>
     <style>
+      .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      </style>
+    <style>
     .title {
         background-color: rgb(196, 242, 242);
         border: 2px solid black;
@@ -21,209 +28,148 @@
         padding: 20px;
     }
     </style>
+
   </head>
   <body>
-    <h1 style="text-align:center"> <strong> <i> Meeting Notes </i></strong></h1>
-    <h2>The nav element</h2>
+    <h1 style="text-align:center"> <strong> <i> Meeting Minutes Notes </i></strong></h1>
 
-    <p>The nav element defines a set of navigation links:</p>
+    <div class="center">
+      <button type="button" onclick="alert('Hello, Welcome to My Page!')">Click me</button>
+    </div>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend><h2>Personal Information:</h2></legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Linh">
+        <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Nguyen">
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <h3>Web Page</h3>
 
     <nav>
-        <a href="/html/">HTML</a> |
-        <a href="/css/">CSS</a> |
-        <a href="/js/">JavaScript</a> |
-        <a href="/python/">Python</a>
+        <a href="https://github.com/LinhNguyen9">GitHub Page</a> |
+        <a href="https://github.com/LinhNguyen9/Lab2_Starter">CSE 110 Lab 2</a> |
     </nav>
     <hr>
 
     <div class="title">
         <p>
             <span style="font-size:130%"> <u>Project:</u> </span>
-            <span style="font-size:110%"> think about it later  </span>
+            <span style="font-size:110%"> Notebook Application  </span>
         </p>
         <p>
-            <span style="font-size:130%"> <u>Attendees:</u> </span>
-            <span style="font-size:110%"> think about it later  </span>
+            <span style="font-size:130%"> <u>Topic:</u> </span>
+            <span style="font-size:110%"> Brainstorm for new project Notebook Application </span>
         </p>
         <p>
             <span style="font-size:130%"> <u>Date:</u> </span>
-            <span style="font-size:110%"> think about it later  </span>
+            <span style="font-size:110%"> 10/09/2022  </span>
         </p>
     </div>
 
     <hr>
+    
+    <h3>Attendees:</h3>
+    <input type="checkbox" id="person1" name="person1" value=":linh">
+    <label for="person1"> Linh Nguyen</label><br>
+    <input type="checkbox" id="person2" name="person2" value="duc">
+    <label for="person2"> Duc Nguyen</label><br>
+    <input type="checkbox" id="person3" name="person3" value="kristy">
+    <label for="person3"> Kristy Chan</label><br>
+    <input type="checkbox" id="person1" name="person1" value=":kenny">
+    <label for="person1"> Kenny Lam</label><br>
+
+    <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" width="1000" height="600">
+  
     <header>
-        Think about something for header
+      <h2><u>Agenda</u></h2>
+      <p> (Things will be covered) <br>
+        <ol>
+          <li>Linh submits project planner to manager by 10/13/2022</li>
+          <li>Duc submits a scratch work for front end user interface to manager by 10/15/2022</li>
+          <li>Kenny submits skeleton psudocode for back end applicaiton to manager by 10/20/2022</li>
+          <li>Kristy submits a webpage design to the product to manager by 10/15/2022</li>
+        </ol>
+      </p>
     </header>
 
-
-    <h3>Don't know how to use link tag yet. ask Kristy about it</h3>
-
-    <h2><u>Agenda</u></h2>
-    <p> (Things will be covered) <br>
-        Think about it later <br>
-        Think about it later <br>
-        Think about it later <br>
-        Think about it later <br>
-        Think about it later <br>
-    </p>
-    <p>---------------------------------------------</p>
-    <p>
-        <span style="font-size:130%">Unfinished business from last meeting: </span> <br>
-            Think about it later <br>
-            Think about it later <br>
-            Think about it later <br>
-            Think about it later <br>
-            Think about it later <br>
-    </p>
-
-    <h2>The section element</h2>
+    <h3>Unfinished business from last meeting: (unordered list)</h3>
+    <ul>
+        <li>Marketing stategy</li>
+        <li>Increase workforce productivity </li>
+    </ul>
 
     <section>
-      <h2>WWF History</h2>
-      <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-    </section>
-    
-    <section>
-      <h2>WWF's Symbol</h2>
-      <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+      <h3> Additional comments on project:</h3>
+      <ul>
+        <li>Divide evenly workload for everyone</li>
+        <li>Stay focus on one job at a time</li>
+    </ul>
     </section>
 
-    <h2>Form</h2>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <input type="submit" value="Submit">
-      </form>
-
-    <h2>Radio Buttons</h2>
-
-    <p>Choose your favorite Web language:</p>
-    
-    <form>
-      <input type="radio" id="html" name="fav_language" value="HTML">
-      <label for="html">HTML</label><br>
-      <input type="radio" id="css" name="fav_language" value="CSS">
-      <label for="css">CSS</label><br>
-      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-      <label for="javascript">JavaScript</label>
-    </form> 
-
-    <h2>Textarea</h2>
+    <h3>Additional notes:</h3>
         <p>The textarea element defines a multi-line input field.</p>
 
         <form action="/action_page.php">
-        <textarea name="message" rows="10" cols="30"></textarea>
+        <textarea name="message" rows="10" cols="30" placeholder="Please add aditional notes here"></textarea>
         <br><br>
         <input type="submit">
     </form>
+    <h3>Meeting summary</h3>
+    <details>
+      <summary>Summary</summary>
+      <li>Brainstorming a Notebook application project</li>
+      <li>Assigned work to members</li>
+      <li>Discuss about increasing workforce productivity</li>
+    </details> 
+    <hr>
 
-    <h2>Fieldset</h2>
-
-    <form action="/action_page.php">
-    <fieldset>
-        <legend>Personalia:</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-    </fieldset>
+    <h2>Lunch Meals (datalist)</h2>
+    <form action="/action_page.php" method="get">
+      <label for="food">Name:</label>
+      <input list="foods" name="food" id="food">
+      <datalist id="foods">
+        <option value="Pho">
+        <option value="Pad Thai">
+        <option value="Dan Dan Noodles">
+        <option value="Banh Mi">
+        <option value="Poke">
+      </datalist>
     </form>
 
-    <h2>Data List</h2>
-    <form action="/action_page.php">
-        <input list="browsers">
-        <datalist id="browsers">
-          <option value="Internet Explorer">
-          <option value="Firefox">
-          <option value="Chrome">
-          <option value="Opera">
-          <option value="Safari">
-        </datalist>
-      </form>
-
-    <h2>Select (option included) </h2>
-    <label for="cars">Choose a car:</label>
-    <select id="cars" name="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
+    <!-- <h2>Select (option included) </h2> -->
+    <label for="level">Spicy level:</label>
+    <select id="level" name="level">
+      <option value="volvo">None</option>
+      <option value="saab">Mild</option>
+      <option value="fiat">Medium</option>
+      <option value="audi">Hot</option>
+      <input type="submit" value="Submit">
     </select>
 
-    <h2>Option</h2>
-
-    <label for="cars">Choose a car:</label>
-
-    <select id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
-    </select>
-
-    <h3>ul (unordered list)</h3>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <h3>The ol element (ordered list)</h3>
-
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-
-    <h2><em>The button Element</em></h2>
-
-    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
-
-    <h1>The img element</h1>
-
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-
-    <h2>The audio element</h2>
+    <h3><i>Little Happy Song</i></h3>
 
     <p>Click on the play button to play a sound:</p>
 
     <audio controls>
-    <source src="horse.ogg" type="audio/ogg">
-    <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    <source src="Serge Quadrado - Little Princess.mp3.mp3">
+    Your food does not support the audio element.
     </audio>
 
-    <h2>The video element</h2>
+    <h3><i>Short Cute Cat Video</i></h3>
 
-    <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
+    <video width="400" height="480" controls>
+        <source src="v09044g40000c1qssdb9rean2ibf5f0g.mp4">
     </video>
-
-    <h1>The details element (summary included)</h1>
-
-    <details>
-      <summary>Epcot Center</summary>
-      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-    </details>
-
-    <h1>a (hyper link)</h1>
-
-    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>    
-
-    <h1>The footer element</h1>
-
+    
     <footer>
-      <p>Author: Hege Refsnes<br>
-      <a href="mailto:hege@example.com">hege@example.com</a></p>
+      <p>Author: Linh Nguyen<br>
+      <a href="mailto:lkn001@ucsd.edu">lkn001@ucsd.edu</a></p>
     </footer>
 
-    
   </body>
 </html>
