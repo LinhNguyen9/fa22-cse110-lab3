@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <title> Meeting Minutes </title>
     <link rel="shortcut icon" type="image/png"  href="globe.png">
 
@@ -10,26 +11,36 @@
     <meta name="author" content="Linh Nguyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {background-color:rgb(248, 233, 210);}
-        h1 {color:red;}
+    <!-- <style>
+        /* body {background-color:rgb(248, 233, 210);} */
+        /* h1 {color:red;} */
         
-    </style>
-    <style>
+    </style> -->
+    <!-- <style>
       .center{
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      </style>
-    <style>
+    </style> -->
+    <!-- <style>
     .title {
         background-color: rgb(196, 242, 242);
         border: 2px solid black;
         margin: 20px;
         padding: 20px;
     }
+    </style> -->
+    <!-- <style>
+      div{
+        background-color: rgb(196, 242, 242);
+        border: 5px solid black;
+        margin: 20px;
+        padding: 20px;
+      }   -->
     </style>
+
+    
 
   </head>
 
@@ -60,6 +71,19 @@
     <hr>
 
     <div class="title">
+    <!-- <div> -->
+      <div class="attendees">
+        <span style="font-size:130%">Attendees:</span><br>
+        <input type="checkbox" id="person1" name="person1" value=":linh">
+        <label for="person1"> Linh Nguyen</label><br>
+        <input type="checkbox" id="person2" name="person2" value="duc">
+        <label for="person2"> Duc Nguyen</label><br>
+        <input type="checkbox" id="person3" name="person3" value="kristy">
+        <label for="person3"> Kristy Chan</label><br>
+        <input type="checkbox" id="person4" name="person4" value=":kenny">
+        <label for="person1"> Kenny Lam</label><br>
+      </div>
+
         <p>
             <span style="font-size:130%"> <u>Project:</u> </span>
             <span style="font-size:110%"> Notebook Application  </span>
@@ -70,13 +94,25 @@
         </p>
         <p>
             <span style="font-size:130%"> <u>Date:</u> </span>
-            <span style="font-size:110%"> 10/09/2022  </span>
+            <span style="font-size:110%"> 10/15/2022  </span>
         </p>
+
     </div>
 
     <hr>
-    
-    <h3>Attendees:</h3>
+    <!-- <div class="attendees">
+      <h3>Attendees:</h3>
+      <input type="checkbox" id="person1" name="person1" value=":linh">
+      <label for="person1"> Linh Nguyen</label><br>
+      <input type="checkbox" id="person2" name="person2" value="duc">
+      <label for="person2"> Duc Nguyen</label><br>
+      <input type="checkbox" id="person3" name="person3" value="kristy">
+      <label for="person3"> Kristy Chan</label><br>
+      <input type="checkbox" id="person4" name="person4" value=":kenny">
+      <label for="person1"> Kenny Lam</label><br>
+    </div> -->
+
+    <!-- <h3>Attendees:</h3>
     <input type="checkbox" id="person1" name="person1" value=":linh">
     <label for="person1"> Linh Nguyen</label><br>
     <input type="checkbox" id="person2" name="person2" value="duc">
@@ -84,9 +120,11 @@
     <input type="checkbox" id="person3" name="person3" value="kristy">
     <label for="person3"> Kristy Chan</label><br>
     <input type="checkbox" id="person4" name="person4" value=":kenny">
-    <label for="person1"> Kenny Lam</label><br>
-
-    <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" width="1000" height="600">
+    <label for="person1"> Kenny Lam</label><br> -->
+    <div class="imgCenter">
+      <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" width="1000" height="600">
+    </div>
+    <!-- <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" width="1000" height="600"> -->
   
     <header>
       <h2><u>Agenda</u></h2>
