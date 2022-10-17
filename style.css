@@ -12,6 +12,10 @@ h1 {
     text-align:center;
     font-family: 'Dancing Script', cursive;
 }
+
+h2, h3{
+    font-style: italic;
+}
 /* Click me button */
 .center{    
     display: flex;
@@ -26,12 +30,12 @@ h1 {
     color: black;
     cursor: pointer;
 }
-
+/* Pseudo-class hover */
 .hide{
     display: none;
     position: static;
 }
-
+/* Combining Two Selectors */
 .center:hover + .hide{
     display: block;
     color: red;
@@ -41,6 +45,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* active Pseudo-class */
+.active-button{
+    color: red;
 }
 
 /* Project box */
@@ -126,6 +135,8 @@ display: grid;
   /* background-color: #fff; */
   /* color: #444; */
   }
+
+ /* small boxes inside grid */
 .box{
   background-color: rgb(237, 211, 211);
   color: rgb(2, 0, 0);
@@ -134,5 +145,32 @@ display: grid;
   font-size: 100%;
 }
 
+/* Attribute selector */
+a[target="color"] {
+    background-color: rgb(255, 255, 5);
+}
 
-/*  */
+/* Descendant Combinator */
+
+li {
+    list-style-type: disc;
+}
+  
+li li {
+    list-style-type: circle;
+}
+
+p {
+    font-style: oblique;
+    font-size: 1em;
+}
+
+/* General sibling combinator */
+div ~ p {
+    color: blue;
+}
+
+/* Child combinator */
+ol > li {
+    font-style: normal;
+}

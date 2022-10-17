@@ -47,23 +47,22 @@
         <input type="text" id="fname" name="fname" placeholder="Linh">
         <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name:</label>
         <input type="text" id="lname" name="lname" placeholder="Nguyen">
-        <input type="submit" value="Submit">
+        <button type="button" class="active-button">Submit</button>
       </fieldset>
     </form>
 
     <!-- Navigation bar with inline display -->
     <h3>Web Page</h3>
-
     <nav >
       <ul>
-        <li class="inline-link"><a href="https://github.com/LinhNguyen9">GitHub Page|</a></li>
-        <li class="inline-link"><a href="https://github.com/LinhNguyen9/Lab2_Starter">CSE 110 Lab 3</a></li>
+        <li class="inline-link"><a href="https://github.com/LinhNguyen9" target="color">GitHub Page</a></li>
+        <li class="inline-link"><a href="https://github.com/LinhNguyen9/fa22-cse110-lab3" target="color">CSE 110 Lab 3</a></li>
       </ul>
     </nav>
     <hr>
 
-  <!-- Flex box with 3 children -->
-  <div class="separate">
+    <!-- Flex box with 3 children -->
+    <div class="separate">
       <!-- Project box -->
       <div class="title">
         <p>
@@ -121,35 +120,35 @@
     </div>
 
     <hr>
-
-    <h3>Unfinished business from last meeting: (unordered list)</h3>
     <ul>
-        <li>Marketing stategy</li>
-        <li>Increase workforce productivity </li>
-    </ul>
-
-    <hr>
-    <section>
-      <h3> Additional comments on project:</h3>
+      <h3>Unfinished business from last meeting: (unordered list)</h3>
       <ul>
-        <li>Divide evenly workload for everyone</li>
-        <li>Stay focus on one job at a time</li>
+          <li>Marketing stategy</li>
+          <li>Increase workforce productivity </li>
+      </ul>
+  
+      <hr>
+      <section>
+        <h3> Additional comments on project:</h3>
+        <ul>
+          <li>Divide evenly workload for everyone</li>
+          <li>Stay focus on one job at a time</li>
+      </ul>
+      </section>
+
+      <hr>
+
+      <h3>Additional notes:</h3>
+          <form action="/action_page.php">
+          <textarea name="message" rows="10" cols="30" placeholder="Please add aditional notes here"></textarea><br>
+          <!-- <input type="submit"> -->
+          <button type="button" class="active-button">Submit</button>
+      </form>
+
     </ul>
-    </section>
-
+  
     <hr>
 
-    <h3>Additional notes:</h3>
-        <p>The textarea element defines a multi-line input field.</p>
-
-        <form action="/action_page.php">
-        <textarea name="message" rows="10" cols="30" placeholder="Please add aditional notes here"></textarea>
-        <br><br>
-        <input type="submit">
-    </form>
-
-    <hr>
-    
     <h3>Meeting summary</h3>
     <details>
       <summary>Summary</summary>
@@ -158,31 +157,6 @@
       <p>Discuss about increasing workforce productivity</p>
     </details> 
     <hr>
-
-    
-    <!-- <h2>Lunch Meals (datalist)</h2>
-
-    <form action="/action_page.php" method="get">
-      <label for="food">Name:</label>
-      <input list="foods" name="food" id="food">
-      <datalist id="foods">
-        <option value="Pho">
-        <option value="Pad Thai">
-        <option value="Dan Dan Noodles">
-        <option value="Banh Mi">
-        <option value="Poke">
-      </datalist>
-    </form>
-
-    <h2>Select (option included) </h2>
-    <label for="level">Spicy level:</label>
-    <select id="level" name="level">
-      <option value="volvo">None</option>
-      <option value="saab">Mild</option>
-      <option value="fiat">Medium</option>
-      <option value="audi">Hot</option>
-    </select>
-    <input type="submit" value="Submit"> -->
     
     <!-- Lunch meal grid -->
     <h2>Lunch Meal Options</h2>
