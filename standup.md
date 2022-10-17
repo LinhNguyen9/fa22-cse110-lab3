@@ -2,7 +2,7 @@
 
 Date: 10/15/2022
 
-Group members: Joyce Weng, Melvyn Tan, Nikki Rejai, Linh Nguyen
+Group members: Linh Nguyen, Duc Nguyen, Kristy Chan, Kenny Lam
 
 ### **Tasks:**
 - Create team brand, team page, and introduction video

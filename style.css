@@ -54,14 +54,14 @@ h2, h3{
 
 /* Project box */
 .title {
-    background-color: rgb(196, 242, 242);
+    background-color: hsl(173, 70%, 94%);
     position: flex;
     text-align: center;
     width: 20cm;
     border: 5px solid black;
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
-    border-radius: 5mm;
+    border-radius: 5vh;
 }
 
 /* Attendees box */
@@ -75,7 +75,7 @@ h2, h3{
     padding: 10px 10px 10px 10px;
     width: 5cm;
     text-align: center;
-    border-radius: 5mm;
+    border-radius: 2.5vw;
 }
 
 .tenor-gif-embed{
@@ -147,7 +147,7 @@ display: grid;
 
 /* Attribute selector */
 a[target="color"] {
-    background-color: rgb(255, 255, 5);
+    background-color: #FFFF00;
 }
 
 /* Descendant Combinator */
@@ -173,4 +173,9 @@ div ~ p {
 /* Child combinator */
 ol > li {
     font-style: normal;
+}
+
+/* id selector */
+#pho, #thai, #chinese, #viet, #japan{
+    font-style: italic;
 }
