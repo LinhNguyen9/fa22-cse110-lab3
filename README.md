@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://linhnguyen9.github.io/Lab2_Starter/
+# Lab 3 - Starter
+https://github.com/LinhNguyen9/fa22-cse110-lab3
