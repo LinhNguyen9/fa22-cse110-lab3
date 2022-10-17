@@ -1,18 +1,48 @@
 /* color for the page */
 body {
     background-color:rgb(248, 233, 210);
-    margin-left: 20px;
+}
+*{
+    margin:5px;
 }
 /* color for header */
 h1 {
     color:red;
+    margin-top: 10px;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
 }
 /* Click me button */
-.center{
+.center{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 5ex;
+    background-color: rgb(241, 212, 242);
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+    position: static;
+}
+
+.center:hover + .hide{
+    display: block;
+    color: red;
+}
+
+.button-position{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* Project box */
 .title {
     background-color: rgb(196, 242, 242);
@@ -20,25 +50,89 @@ h1 {
     text-align: center;
     width: 20cm;
     border: 5px solid black;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5mm;
 }
 
 /* Attendees box */
 .attendees {
     border: 1.25mm solid black;
-    position: absolute;
+    position: flex;
+    left: 20cm;
     top: 7cm;
-    right: 4cm;
-    margin: 10px;
-    padding: 10px;
+    right: 5cm;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     width: 5cm;
     text-align: center;
+    border-radius: 5mm;
+}
+
+.tenor-gif-embed{
+    /* width: 250x;
+    height: 200px; */
+    gap: 10px;
+    border: 5p solif black;
+    border-radius: 5mm;
 }
 
 /* imgCenter */
-.imgCenter{
-    display: center;
+.img_center{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    min-width: 50%;
+}
+
+/* box for project*/
+.separate{
+    display:flex;
+    gap: 20px;
+}
+
+/* Agenda */
+.agenda{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 5px outset rgb(169, 149, 234);
+    border-width: 0.25em;
+    border-radius: 5mm;
+}
+
+/* Text decoration */
+.text-deco{
+    text-decoration: underline;
+}
+/* Inline for nav bar*/ 
+.inline-link{
+    display: inline;
+}
+/* Display none */
+.none{
+    display: none;
+}
+/* Grid */
+.grid-box {
+display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-gap: 20px;
+  /* background-color: #fff; */
+  /* color: #444; */
+  }
+.box{
+  background-color: rgb(237, 211, 211);
+  color: rgb(2, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 100%;
 }
 
 
+/*  */

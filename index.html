@@ -10,47 +10,36 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Linh Nguyen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <style>
-        /* body {background-color:rgb(248, 233, 210);} */
-        /* h1 {color:red;} */
-        
-    </style> -->
-    <!-- <style>
-      .center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
+    <!-- Google font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Media Query -->
+    <style>
+      @media screen and (min-width: 480px) {
+      #leftsidebar {width: 200px; float: left;}
+      #main {margin-left: 216px;}
       }
-    </style> -->
-    <!-- <style>
-    .title {
-        background-color: rgb(196, 242, 242);
-        border: 2px solid black;
-        margin: 20px;
-        padding: 20px;
-    }
-    </style> -->
-    <!-- <style>
-      div{
-        background-color: rgb(196, 242, 242);
-        border: 5px solid black;
-        margin: 20px;
-        padding: 20px;
-      }   -->
     </style>
-
     
 
   </head>
 
   <body>
-    <h1 style="text-align:center"> <strong> <i> Meeting Minutes Notes </i></strong></h1>
+    <!-- Heading title -->
+    <h1> <strong> <i> Meeting Minutes Notes </i></strong></h1>
 
-    <div class="center">
-      <button type="button" onclick="alert('Hello, Welcome to My Page!')">Click me</button>
+    <!-- Click button with hover function -->
+    <div class="button-position">
+      <div class="center">
+        <button type="button" onclick="alert('Hello, Welcome to My Page!')">Click me</button>
+      </div>
+      <div class="hide">Click on me</div>
     </div>
-
+    
+    <!-- Personal Field -->
     <form action="/action_page.php">
       <fieldset>
         <legend><h2>Personal Information:</h2></legend>
@@ -62,79 +51,76 @@
       </fieldset>
     </form>
 
+    <!-- Navigation bar with inline display -->
     <h3>Web Page</h3>
 
-    <nav>
-        <a href="https://github.com/LinhNguyen9">GitHub Page</a> |
-        <a href="https://github.com/LinhNguyen9/Lab2_Starter">CSE 110 Lab 2</a> |
+    <nav >
+      <ul>
+        <li class="inline-link"><a href="https://github.com/LinhNguyen9">GitHub Page|</a></li>
+        <li class="inline-link"><a href="https://github.com/LinhNguyen9/Lab2_Starter">CSE 110 Lab 3</a></li>
+      </ul>
     </nav>
     <hr>
 
-    <div class="title">
-    <!-- <div> -->
-      <div class="attendees">
-        <span style="font-size:130%">Attendees:</span><br>
-        <input type="checkbox" id="person1" name="person1" value=":linh">
-        <label for="person1"> Linh Nguyen</label><br>
-        <input type="checkbox" id="person2" name="person2" value="duc">
-        <label for="person2"> Duc Nguyen</label><br>
-        <input type="checkbox" id="person3" name="person3" value="kristy">
-        <label for="person3"> Kristy Chan</label><br>
-        <input type="checkbox" id="person4" name="person4" value=":kenny">
-        <label for="person1"> Kenny Lam</label><br>
-      </div>
-
+  <!-- Flex box with 3 children -->
+  <div class="separate">
+      <!-- Project box -->
+      <div class="title">
         <p>
-            <span style="font-size:130%"> <u>Project:</u> </span>
+            <span style="font-size:130%" class="text-deco">Project:</span>
             <span style="font-size:110%"> Notebook Application  </span>
         </p>
         <p>
-            <span style="font-size:130%"> <u>Topic:</u> </span>
+            <span style="font-size:130%" class="text-deco">Topic:</span>
             <span style="font-size:110%"> Brainstorm for new project Notebook Application </span>
         </p>
         <p>
-            <span style="font-size:130%"> <u>Date:</u> </span>
+            <span style="font-size:130%" class="text-deco">Date:</span>
             <span style="font-size:110%"> 10/15/2022  </span>
         </p>
+      </div>
 
+        <!-- attendees box -->
+        <div class="attendees">
+          <span style="font-size:130%">Attendees:</span><br>
+          <input type="checkbox" id="person1" name="person1" value=":linh">
+          <label for="person1"> Linh Nguyen</label><br>
+          <input type="checkbox" id="person2" name="person2" value="duc">
+          <label for="person2"> Duc Nguyen</label><br>
+          <input type="checkbox" id="person3" name="person3" value="kristy">
+          <label for="person3"> Kristy Chan</label><br>
+          <input type="checkbox" id="person4" name="person4" value=":kenny">
+          <label for="person1"> Kenny Lam</label><br>
+        </div>
+
+        <!-- GIF box -->
+        <div class="tenor-gif-embed" data-postid="21094508" data-share-method="host" 
+          data-aspect-ratio="1.29555" data-width="20%">
+          <a href="https://tenor.com/view/peachcry-peachmad-typing-homework-homeworktime-gif-21094508">
+          Peachcry Peachmad GIF</a>from <a href="https://tenor.com/search/peachcry-gifs">
+          Peachcry GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
 
     <hr>
-    <!-- <div class="attendees">
-      <h3>Attendees:</h3>
-      <input type="checkbox" id="person1" name="person1" value=":linh">
-      <label for="person1"> Linh Nguyen</label><br>
-      <input type="checkbox" id="person2" name="person2" value="duc">
-      <label for="person2"> Duc Nguyen</label><br>
-      <input type="checkbox" id="person3" name="person3" value="kristy">
-      <label for="person3"> Kristy Chan</label><br>
-      <input type="checkbox" id="person4" name="person4" value=":kenny">
-      <label for="person1"> Kenny Lam</label><br>
-    </div> -->
-
-    <!-- <h3>Attendees:</h3>
-    <input type="checkbox" id="person1" name="person1" value=":linh">
-    <label for="person1"> Linh Nguyen</label><br>
-    <input type="checkbox" id="person2" name="person2" value="duc">
-    <label for="person2"> Duc Nguyen</label><br>
-    <input type="checkbox" id="person3" name="person3" value="kristy">
-    <label for="person3"> Kristy Chan</label><br>
-    <input type="checkbox" id="person4" name="person4" value=":kenny">
-    <label for="person1"> Kenny Lam</label><br> -->
-    <div class="imgCenter">
-      <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" width="1000" height="600">
-    </div>
-    <!-- <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" width="1000" height="600"> -->
+    <!-- Image -->
+    <img src="https://conceptboard.com/wp-content/uploads/CCB-blog-header-stickies.png" alt="Productivity" class="img_center">
   
-    <header>
-      <h2><u>Agenda</u></h2>
-        <ol>
-          <li>Linh submits project planner to manager by 10/13/2022</li>
-          <li>Duc submits a scratch work for front end user interface to manager by 10/15/2022</li>
-          <li>Kenny submits skeleton psudocode for back end applicaiton to manager by 10/20/2022</li>
-          <li>Kristy submits a webpage design to the product to manager by 10/15/2022</li>
-        </ol>
-    </header>
+    <!-- Agenda box -->
+    <div class="agenda">
+      <header>
+        <h2><u>Agenda</u></h2>
+          <ol>
+            <li>Linh submits project planner to manager by 10/13/2022</li>
+            <li>Duc submits a scratch work for front end user interface to manager by 10/15/2022</li>
+            <li>Kenny submits skeleton psudocode for back end applicaiton to manager by 10/20/2022</li>
+            <li>Kristy submits a webpage design to the product to manager by 10/15/2022</li>
+          </ol>
+      </header>
+    </div>
+
+    <hr>
 
     <h3>Unfinished business from last meeting: (unordered list)</h3>
     <ul>
@@ -142,6 +128,7 @@
         <li>Increase workforce productivity </li>
     </ul>
 
+    <hr>
     <section>
       <h3> Additional comments on project:</h3>
       <ul>
@@ -149,6 +136,8 @@
         <li>Stay focus on one job at a time</li>
     </ul>
     </section>
+
+    <hr>
 
     <h3>Additional notes:</h3>
         <p>The textarea element defines a multi-line input field.</p>
@@ -158,6 +147,9 @@
         <br><br>
         <input type="submit">
     </form>
+
+    <hr>
+    
     <h3>Meeting summary</h3>
     <details>
       <summary>Summary</summary>
@@ -167,7 +159,9 @@
     </details> 
     <hr>
 
-    <h2>Lunch Meals (datalist)</h2>
+    
+    <!-- <h2>Lunch Meals (datalist)</h2>
+
     <form action="/action_page.php" method="get">
       <label for="food">Name:</label>
       <input list="foods" name="food" id="food">
@@ -180,7 +174,7 @@
       </datalist>
     </form>
 
-    <!-- <h2>Select (option included) </h2> -->
+    <h2>Select (option included) </h2>
     <label for="level">Spicy level:</label>
     <select id="level" name="level">
       <option value="volvo">None</option>
@@ -188,7 +182,21 @@
       <option value="fiat">Medium</option>
       <option value="audi">Hot</option>
     </select>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit"> -->
+    
+    <!-- Lunch meal grid -->
+    <h2>Lunch Meal Options</h2>
+    <div class="grid-box">
+      <div class="box a">Pho</div>
+      <div class="box b">Pad Thai</div>
+      <div class="box c">Dan Dan Noodles</div>
+      <div class="box d">Banh Mi</div>
+      <div class="box e">Poke</div>
+    </div>
+  
+    <hr>
+
+    <h2>Entertainment</h2>
 
     <h3><i>Little Happy Song</i></h3>
 
